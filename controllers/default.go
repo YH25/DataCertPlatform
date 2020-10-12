@@ -13,4 +13,5 @@ type MainController struct {
 func (c *MainController) Get() {
 	fmt.Println("helloword")
 	c.TplName = "register.html"
+	c.TplName = "enter.html"
 }

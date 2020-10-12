@@ -5,11 +5,11 @@ import (
 	"github.com/astaxie/beego"
 )
 
-type RegisterController struct {
+type EnterControllers struct {
 	beego.Controller
 }
 
-func (r *RegisterController) Post() {
+func (r *EnterControllers) Post() {
 
 	//1.解析用户端提交的请求数据
 	var User models.User
@@ -20,9 +20,9 @@ func (r *RegisterController) Post() {
 	}
 	//2.将解析到的数据保存到数据库中
 	//3.将处理结果返回给客户端浏览器
-	  //3.1如果成功，跳转登录页面
-	   //tpl:template:模板
-	   r.TplName = "login.html"
-	  //3.2如果失败，提示错误信息
+	//3.1如果成功，跳转登录页面
+	//tpl:template:模板
+	r.TplName = "login.html"
+	//3.2如果失败，提示错误信息
 
 }
