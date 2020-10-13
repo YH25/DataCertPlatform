@@ -19,6 +19,12 @@ func (r *RegisterController) Post() {
 		return
 	}
 	//2.将解析到的数据保存到数据库中
+	 _, err = User.AddUser()
+	if err != nil {
+		r.Ctx.WriteString("抱歉，用户注册失败，请重试")
+		return
+
+	}
 	//3.将处理结果返回给客户端浏览器
 	  //3.1如果成功，跳转登录页面
 	   //tpl:template:模板

@@ -11,5 +11,7 @@ func init() {
     //用户注册接口
     beego.Router("/register",&controllers.RegisterController{})
     //用户登录接口
-    beego.Router("/enter",&controllers.EnterControllers{})
+    beego.Router("/login",&controllers.LoginController{})
+    //请求直接登录的页面
+    beego.Router("/login.html",&controllers.LoginController{})
 }
