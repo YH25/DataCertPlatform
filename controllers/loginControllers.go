@@ -16,9 +16,10 @@ func (l *LoginController) Get() {
     l.TplName = "login.html"
 }
 
-
+/*
+post方法处理用户的登录请求
+ */
 func (l *LoginController) Post() {
-
 	//1.解析客户端提交的登录数据
 	var User models.User
 	err :=l.ParseForm(&User)
@@ -27,7 +28,7 @@ func (l *LoginController) Post() {
 		l.Ctx.WriteString("抱歉，用户登录信息解析失败，请重试")
 		return
 	}
-	//2.根据解析到的数，执行数据库查询操作
+	//2.根据解析到的数据，执行数据库查询操作
 	u, err := User.QueryUser()
 	//3.判断数据库查询结果
 	hashMd5 := md5.New()
