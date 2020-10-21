@@ -11,6 +11,7 @@ type ProofOfwork struct {
 
 }
 
+
 /*
 实例化一个Pow算法的实例
 */
@@ -21,5 +22,6 @@ func NewPow(block Block) ProofOfwork {
 		Target: t,
 		Block: block,
 	}
+
 	return pow
 }
