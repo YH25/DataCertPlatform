@@ -16,6 +16,7 @@ type Block struct {
 	Data      []byte //数据字段
 	Hash      []byte //当前区块的hash值
 	Version   string //版本号
+	Noce      int64  //区块对应的nonce值
 }
 /*
 创建一个新区快
@@ -47,7 +48,13 @@ func NewBlock(height int64, pervHash []byte, data []byte)Block {
 
 		//调用hash计算，对区块进行sha256哈希值计算
 	block.Hash = utils.SHA256HashBlock(blockBytes)
+
+	//挖矿竞争，获得记账权
+	
+
 	return block
+
+
 }
 
 /*
