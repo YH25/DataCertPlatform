@@ -16,7 +16,7 @@ type Block struct {
 	Data      []byte //数据字段
 	Hash      []byte //当前区块的hash值
 	Version   string //版本号
-	Noce      int64  //区块对应的nonce值
+	Nonce      int64  //区块对应的nonce值
 }
 /*
 创建一个新区快
@@ -29,20 +29,27 @@ func NewBlock(height int64, pervHash []byte, data []byte)Block {
 		Data: data,
 		Version: "0x01",
 	}
+	//找nonce值，通过工作量证明算法计算寻找
+	pow := NewPow(block)
+	nonce := pow.Run()
+	block.Nonce = nonce
 
-		//1、将block结构体数据转换为[]byte类型
-		heightBytes, _ := Int64ToByte(block.Height)
-		timeStampBytes, _ := Int64ToByte(block.TimeStamp)
-		versionBytes := stringToBytes(block.Version)
 
-		var blockBytes []byte
-		//bytes.join拼接
-		bytes.Join([][]byte{
-		heightBytes,
-		timeStampBytes,
-		block.PervHash,
-		block.Data,
-		versionBytes,
+	//1、将block结构体数据转换为[]byte类型
+	heightBytes, _ := utils.Int64ToByte(block.Height)
+	timeStampBytes, _ := utils.Int64ToByte(block.TimeStamp)
+	versionBytes := utils.StringToBytes(block.Version)
+
+    nonceBytes, _ := utils.Int64ToByte(block.Nonce)
+	var blockBytes []byte
+	//bytes.join拼接
+	bytes.Join([][]byte{
+	heightBytes,
+	timeStampBytes,
+	block.PervHash,
+	block.Data,
+	versionBytes,
+	nonceBytes,
 	},[]byte{})
 
 

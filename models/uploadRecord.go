@@ -24,11 +24,12 @@ type UploadRecord struct {
 把一条认证数据保存到数据库表中
  */
 func (u UploadRecord) SaveRecord() (int64, error) {
-	rs, err := db_mysql.Db.Exec("insert into upload_record(user_id, file_name, file_size, file_cert, file_title, cert_time) " + "values(?,?,?,?,?,?)")
+	rs, err := db_mysql.Db.Exec("insert into upload_record(user_id, file_name, file_size, file_cert, file_title, cert_time) " +
+		"values(?,?,?,?,?,?)",u.UserId,u.FileName,u.FileSize,u.FileCert,u.FileTitle,u.CertTime)
 	if err != nil {
 		return -1, err
 	}
-	id, err := rs.RowsAffected()
+	id, _ := rs.RowsAffected()
 	if err != nil {
 		return -1, err
 	}
@@ -39,7 +40,7 @@ func (u UploadRecord) SaveRecord() (int64, error) {
 根据用户Id查询符合条件的认证数据记录
  */
 func QueryRecordsByUserId(userId int) ([]UploadRecord, error) {
-	rs, err := db_mysql.Db.Query("select id, user_id, file_name, file_size, file_cert, file_title, cert_time) where user_id = ?", userId)
+	rs, err := db_mysql.Db.Query("select id, user_id, file_name, file_size, file_cert, file_title, cert_time from upload_record where user_id = ?", userId)
 	if err != nil {
 		return nil, err
 	}
