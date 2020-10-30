@@ -5,34 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fce059c-3dd8-4f93-92ec-5eee740717be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blockchain/blockChain.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/app-5e0455372927b43eec8b.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/app-de629dfeac93cb9584b8.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/common-5e0455372927b43eec8b.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/common-de629dfeac93cb9584b8.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/BQNotarization-8b06e.chunk.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/CertificateMonitor-f4dff.chunk.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/Notification-0a19e.chunk.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/Setting-4599a.chunk.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/UrlEvidence-f8f7a.chunk.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/UserAttList-538b0.chunk.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/UserChart-515e7.chunk.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/UserDoCertify-9c14d.chunk.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/UserKyc-ce20c.chunk.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/UserLoginForm-86fb5.chunk.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/UserRegistryForm-ef59c.chunk.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/app-5e0455372927b43eec8b.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/app-de629dfeac93cb9584b8.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/common-5e0455372927b43eec8b.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/common-de629dfeac93cb9584b8.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/upload/1015.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/block.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/block.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/pow.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/pow.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/uploadRecord.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/uploadRecord.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/poll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/set-cookies" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
